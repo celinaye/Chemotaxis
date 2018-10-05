@@ -16,6 +16,11 @@ void draw()
     colony[i].show();
   }
 }
+void mouseClicked(){
+  colony=new Bacteria[30];
+  for (int i=0; i<colony.length; i++)
+    colony[i] = new Bacteria(400,150);
+}
 class Bacteria
 {
   int myX, myY, myColor;
@@ -43,4 +48,5 @@ class Bacteria
     ellipse(100-20+myX, 100-10+myY, 13, 13);
     fill(200,100,0);
   }
-}  
+}
+
